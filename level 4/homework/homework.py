@@ -1,0 +1,16 @@
+price = 5
+product = 3
+print(price * product) # 5 * 3 = 15
+me = 15
+number1 = 12
+number2 = 3
+print(number1 + number2) # 12 + 3 = 15
+print(number1 - number2) # 12 - 3 = 9
+print(number1 * number2) # 12 * 3 = 36
+print(number1 / number2) # 12 / 3 = 4
+name = "nika"
+age = 15
+print(name + str(age)) # nika + 15 =nika15
+me = 15
+parent = 36
+print(36 - me) # 36 - 15 = 21
