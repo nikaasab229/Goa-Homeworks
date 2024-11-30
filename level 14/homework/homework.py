@@ -7,7 +7,7 @@ odd_range = range(11, 32, 2)
 for _ in range(10):
     print("your last name")
     for i in range(10, 31):
-    print (i / 2)
+     print(i / 2)
 for i in range(40, 61):
     print(i ** 3)
 for _ in range(5):
