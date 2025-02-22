@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .box {
+            width: 794px;
+            height: 160px;
+            padding: 50px;
+            border: 5px solid black;
+            margin: 50px 50px 30px 50px;
+            background-color: #f4d7a4;
+            position: relative;
+        }
+        .padding {
+            background-color: #c5d9a0;
+            padding: 50px;
+        }
+        .content {
+            width: 794px;
+            height: 160px;
+            background-color: #87a3b4;
+            text-align: center;
+            line-height: 160px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .border {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 5px solid black;
+        }
+        .margin {
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            right: -50px;
+            bottom: -30px;
+            background-color: #f7c797;
+            z-index: -1;
+        }
+        .label {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .top-margin { top: -30px; left: 50%; transform: translateX(-50%); }
+        .side-margin { top: 50%; left: -30px; transform: translateY(-50%); }
+        .top-border { top: -5px; left: 50%; transform: translateX(-50%); }
+        .side-border { top: 50%; left: -5px; transform: translateY(-50%); }
+        .top-padding { top: 10px; left: 50%; transform: translateX(-50%); }
+        .side-padding { top: 50%; left: 10px; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="margin"></div>
+        <div class="border"></div>
+        <div class="padding">
+            <div class="content">794 × 160</div>
+        </div>
+        <div class="label top-margin">50</div>
+        <div class="label side-margin">30</div>
+        <div class="label top-border">5</div>
+        <div class="label side-border">5</div>
+        <div class="label top-padding">50</div>
+        <div class="label side-padding">50</div>
+    </div>
+</body>
+</html>
